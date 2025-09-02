@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NAHA-AI Assistant</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="./img/logo.png" >
+  <link rel="icon" type="image/png" href="./img/logo.png">
 </head>
+
 <body>
   <div class="container">
-    
+
     <header>
       <div class="head-left autoblur">
         <img src="./img/logo.png" alt="NAHA Logo" class="logo">
@@ -17,28 +19,38 @@
       </div>
 
       <nav class="head-right autoblur">
-        <a href="#about-section" class="about-link">About</a>
-        
-        <a href="#contact" class="contact-link">Contact</a>
+        <a href="#about-section" class="about-link" data-popup="about-popup">About</a>
+        <a href="#contact" class="contact-link" data-popup="contact-popup">Contact</a>
       </nav>
+
     </header>
+    <div id="about-popup" class="popup" tabindex="0" style="display: none;">
+      NAHA is your futuristic AI assistant 🤖
+      Built for modern voice interaction.
+      Fast • Smart • Sleek.
+    </div>
+
+    <div id="contact-popup" class="popup" tabindex="0" style="display: none;">
+      📧 <a href="mailto:hammadmm03@gmail.com">hammadmm03@gmail.com</a>
+      📞 <a href="tel:+91-7010090100">+91-7010090100</a>
+      💼 <a href="https://www.linkedin.com/in/hammad-m-mohammed-4a9333374">www.linkedin.com/in/hammad-m-mohammed-4a9333374</a>
+    </div>
 
     <section class="hero-section " id="h">
       <img src="./img/robo.png" alt="Futuristic robot illustration" class="robo autoblur">
       <img src="./img/mic.png" alt="Neon glowing microphone" class="mic autoblur">
-      <p class="word autoblur">Click to Speak</p>
+      <p class="word autoblur" id="pSpeak">Click to Speak</p>
       <div class="orb"></div>
       <div class="chatbox">
       <div id="chatMessages"></div>
-      </div>
-
+       </div>
     </section>
-   
 
-  
+
+
   </div>
 
   <script src="./script.js"></script>
 </body>
-</html>
 
+</html>
